@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Bedre Dagbladet (dagbladet.no)
 // @namespace      http://anderse.wordpress.com/
-// @version        0.7.4
+// @version        0.7.5
 // @description    Lei av Justin Bieber eller andre nyheter om kjendiser og sladder? Denne utvidelsen fjerner alle disse artiklene fra forsiden og andre plagsomme bokser.
 // @downloadURL    http://userscripts.org/scripts/source/165123.user.js
 // @source         http://userscripts.org/scripts/show/165123
@@ -63,6 +63,7 @@
 
     // SOL.no ads and links
     $('#solBox').remove();
+    $('#startquizteaser').remove();
 
     // Dagbladet TV box
     $('.dbtv').parents('div[class^=grid].colDropZone.locked').remove();
